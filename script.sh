@@ -9,7 +9,7 @@ sudo apt install ./google-chrome-stable_current_amd64.deb -y
 xdg-settings set default-web-browser google-chrome.desktop
 
 # Install Discord via snap
-sudo snap install discord
+sudo snap install discord --classic
 
 # Install IntelliJ Ultimate via snap
 sudo snap install intellij-idea-ultimate --classic
