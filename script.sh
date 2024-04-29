@@ -35,6 +35,9 @@ curl -s "https://get.sdkman.io" | bash
 sudo apt install zsh -y
 chsh -s $(which zsh)
 
+# Install automatic ubuntu drivers
+sudo ubuntu-drivers install -y
+
 # Generate GitHub SSH Keys
 ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ""
 echo "SSH key generated. Please add the public key (~/.ssh/id_ed25519.pub) to your GitHub account."
