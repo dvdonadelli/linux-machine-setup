@@ -23,7 +23,7 @@ wget -O steam.deb https://cdn.cloudflare.steamstatic.com/client/installer/steam.
 sudo apt install ./steam.deb -y
 
 # Install Spotify via snap
-sudo snap install spotify
+sudo snap install spotify --classic
 
 # Install OBS Studio via apt
 sudo apt install obs-studio -y
