@@ -36,7 +36,7 @@ sudo apt install zsh -y
 chsh -s $(which zsh)
 
 # Install automatic ubuntu drivers
-sudo ubuntu-drivers install -y
+sudo ubuntu-drivers install
 
 # Generate GitHub SSH Keys
 ssh-keygen -t ed25519 -f ~/.ssh/id_ed25519 -N ""
@@ -47,5 +47,8 @@ echo "alias update='sudo apt update -y && sudo apt upgrade -y && sudo snap refre
 
 # Reload zshrc to apply changes
 source ~/.zshrc
+
+# Install Oh My ZSH!
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
 
 echo "Setup completed! Please logout and login again for changes to take effect."
